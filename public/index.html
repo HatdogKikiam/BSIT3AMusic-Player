@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Music Player</h1>
+    <div id="search">
+      <input type="text" id="searchInput" placeholder="Search for a song...">
+      <button id="searchButton">Search</button>
+    </div>
+    <div id="results"></div>
+    <div id="player" style="display: none;">
+      <div id="trackInfo"></div>
+      <img id="coverArt" src="" alt="Track Cover">
+      <audio controls id="audioPlayer"></audio>
+      <div id="lyrics"></div>
+      <button id="shuffleButton">
+        <img src="shuff.svg" alt="Shuffle">
+      </button>      
+      <div id="goBack">&larr; Back to Search</div>
+      <button id="nextButton">
+        <img src="nex.png" alt="Next">
+      </button>      
+      <div id="previousButton">
+        <img src="prev.png" alt="Previous">
+      </div>
+      
+    </div>
+  <script src="script.js"></script>
+  </div>
+ 
+</body>
+</html>

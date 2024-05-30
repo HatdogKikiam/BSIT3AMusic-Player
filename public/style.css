@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #1DB954;
+  border-radius: 10px;
+  background-color: #000;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  overflow: auto;
+  position: relative;
+}
+
+h1 {
+  color: #1DB954;
+}
+
+#goBack {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  color: #1DB954;
+}
+
+#search {
+  position: sticky;
+  top: 0;
+  background-color: #000;
+  padding: 15px 0;
+  z-index: 999;
+}
+
+input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #121212;
+  color: #fff;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1DB954;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1ED760;
+}
+
+#results {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.result-item {
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.result-item:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.result-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+#player {
+  margin-top: 20px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  border: 2px solid #1DB954;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+#coverArt {
+  max-width: 200px;
+  max-height: 200px;
+  margin-bottom: 20px;
+}
+
+#audioPlayer {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #121212;
+  padding: 10px;
+  border: 2px solid #1DB954;
+  color: #fff;
+}
+
+#audioPlayer::-webkit-media-controls-timeline,
+#audioPlayer::-webkit-media-controls-timeline-container,
+#audioPlayer::-webkit-media-controls-timeline-track {
+  background-color: #2a2a2a;
+  height: 10px;
+  border-radius: 5px;
+}
+
+#audioPlayer::-webkit-media-controls-current-time-display,
+#audioPlayer::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
+
+#audioPlayer::-webkit-media-controls-seek-back-button,
+#audioPlayer::-webkit-media-controls-seek-forward-button {
+  display: none;
+}
+
+#audioPlayer::-webkit-media-controls-volume-slider-container,
+#audioPlayer::-webkit-media-controls-mute-button {
+  background-color: #121212;
+  border-radius: 10px;
+}
+
+#audioPlayer::-webkit-media-controls-mute-button,
+#audioPlayer::-webkit-media-controls-volume-slider-container {
+  display: flex;
+  align-items: center;
+}
+
+#audioPlayer::-webkit-media-controls-volume-slider {
+  margin: 0 10px;
+}
+
+#trackInfo {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#lyrics {
+  margin-top: 20px;
+  text-align: left;
+  max-width: 90%;
+  white-space: pre-wrap;
+}
+  #shuffleButton, #nextButton, #previousButton {
+    padding: 0; /* Remove padding */
+    border: none;
+    background: green; /* Remove background */
+    cursor: pointer;
+    margin-right: 10px; /* Add margin to separate buttons */
+    display: inline-flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+  }
+  
+  #shuffleButton img, #nextButton img, #previousButton img {
+    width: 32px; /* Adjust width and height as needed */
+    height: 32px;
+  }
+  
+
+
+  
